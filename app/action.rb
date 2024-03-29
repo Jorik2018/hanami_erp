@@ -11,8 +11,10 @@ module HanamiErp
 
     def handle_not_found(request, response, exception)
       response.status = 404
-      response.format = :html
-      response.body = "Not found"
+      # response.format = :html
+      # response.body = "Not found"
+      response.format = :json
+      response.body = {error: "not_found"}.to_json
     end
   end
 end
