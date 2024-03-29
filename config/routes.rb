@@ -2,6 +2,8 @@
 
 module HanamiErp
   class Routes < Hanami::Routes
-    # Add your routes here. See https://guides.hanamirb.org/routing/overview/ for details.
+    root to: "home.show"
+    get "/home/:id", to: "home.show"
+    get "/books", to: "books.index"
   end
 end

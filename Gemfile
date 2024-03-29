@@ -34,3 +34,12 @@ group :test do
   gem "capybara"
   gem "rack-test"
 end
+
+
+gem "rom", "~> 5.3"
+gem "rom-sql", "~> 3.6"
+gem "pg"
+
+group :test do
+  gem "database_cleaner-sequel"
+end
