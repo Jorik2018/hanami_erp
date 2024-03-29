@@ -12,7 +12,7 @@ Hanami.app.register_provider :persistence, namespace: true do
       config = target["persistence.config"]
   
       config.auto_registration(
-        target.root.join("lib/HanamiErp/persistence"),
+        target.root.join("lib/Hanami_erp/persistence"),
         namespace: "HanamiErp::Persistence"
       )
   
